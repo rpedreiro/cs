@@ -37,6 +37,16 @@ Cypress.Commands.add('closeModalIfExists', () => {
 	});
 });
 
+Cypress.Commands.add('getContainer', () => {
+
+	if (Cypress.$('mat-dialog-container').length) {
+
+		return cy.get('mat-dialog-container');
+	}
+
+	return cy.get('body');
+});
+
 Cypress.Commands.add('initBet', (bet) => {
 	let coin1 = '';
 	let coin2 = '';

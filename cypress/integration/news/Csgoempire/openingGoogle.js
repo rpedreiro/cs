@@ -23,3 +23,4 @@ Then(/^I should win money$/, () => {
 
   cy.initBet('0.01');
 });
+
