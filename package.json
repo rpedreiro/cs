@@ -4,6 +4,7 @@
   "description": "Example of cypress with cucumber",
   "main": "index.js",
   "scripts": {
+    "openmpire": "cypress open",
     "csgoempire": "cypress run --spec \"cypress/integration/news/Csgoempire.feature\"",
     "test": "cypress run --spec \"**/*.feature\"",
     "test:all": "cypress run --spec \"**/*.features\""
